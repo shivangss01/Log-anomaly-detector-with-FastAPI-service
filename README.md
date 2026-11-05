@@ -77,6 +77,10 @@ Example response from `/anomalies`:
 
 The generator injects two spikes: 11:00 to 11:04 at a 60% 5xx rate, and 12:30 to 12:32 at 80%. The detector flags all 8 spike minutes, with 4 false alarms on normal traffic.
 
+## Note on first load
+
+The live demo runs on Render's free tier, which sleeps after a period of inactivity. The first request may take 30 to 60 seconds while the service starts. Later requests respond quickly.
+
 ## Tech stack
 
 Python, pandas, scikit-learn, matplotlib, FastAPI, Uvicorn, Docker.

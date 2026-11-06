@@ -1,4 +1,5 @@
 # Log Anomaly Detector
+![Tests](https://github.com/shivangss01/Log-anomaly-detector-with-FastAPI-service/actions/workflows/tests.yml/badge.svg)
 
 An Isolation Forest-based anomaly detector for nginx access logs. It groups requests into one-minute windows, counts requests and 5xx errors per window, flags unusual minutes, and serves the results through a FastAPI service.
 
